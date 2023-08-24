@@ -1,5 +1,5 @@
 '''
-Primitive Types os variables (data):
+Primitive Types of variables (data):
 
 STR: strings are text in general terms
 INT: integer are natural numbers: 1, 2, 3, 0, -1, -6, etc...
