@@ -1,7 +1,7 @@
 """
 Dictionaries
-
-we can access the dictionaries's values and keys using methods. 
+As dictionaries don't work with indexes, there is a sequence, but we cannot say it is ordered, unless we sort it.
+we can access the dictionaries's values and keys using the following ways. 
 Let's consider the following example:
 """
 
@@ -26,6 +26,11 @@ print(f"The modified dict: {myDict}")
 print(f"The original dict: {myDict}")
 myDict.update({"teacher":"ian christani"})
 print(f"The modified dict: {myDict}")
+
+# sorting the dictionary
+print(f"The original dict: {myDict}")
+sortedDict = sorted(myDict)
+print(f"The modified dict: {sortedDict}")
 
 # making a copy of your dict - sintax: newDictName = refDictName.copy()
 newD = myDict.copy()
