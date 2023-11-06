@@ -50,10 +50,7 @@ print(aboutIan[0:3])
 print(f"now slicing with negative index: aboutIan[:-2]")
 print(aboutIan[:-2])
 
-# ********** as you could see the endingElementIndex is used as a reference only, not providing the real last element index to be included. *********
-
-print("")
-
+# ********** as you could see the endingElementIndex is used as a reference only, not providing the last element from the index that was included.. *********
 #____________________________________________________________________________________________________________
 
 """
@@ -111,14 +108,26 @@ print(f'the list before join: {listOfLetters}')
 listOfLetters = "#".join(listOfLetters)
 print(f'the list after join: {listOfLetters}\n')
 
+# make a copy from a list (resulting in INDEPENDENT lists) - sintax: nameNewList = nameSourceList[:]
+newList = aboutIan[:]
 
-#____________________________________________________________________________________________________________
+# working with derived lists (resulting in NOT INDEPENDENT lists) - sintax: nameNewList = nameSourceList
+# IDENTITY
+sourceList = ["cats", "dogs", "birds"]
+# making the atributions
+list2 = sourceList
+list3 = list2
+# We will still have the list3 with elements
+del sourceList[2]
+del list2
+print(list3)
 
-"""
-Multidimentional lists
-
-As one element inside a list might be any kind of data, why not be a data structure? 
-Actually we have it! We can put list inside other list and so on (it calls NESTED).
-example:
-"""
-
+# second test
+sourceList = ["cats", "dogs", "birds"]
+# making the atributions
+list2 = sourceList
+list3 = list2
+# now we have an empty list as result
+del sourceList[2]
+del list2[:]
+print(list3)

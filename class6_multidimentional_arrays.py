@@ -86,4 +86,3 @@ print(myArrayInsideOtherArray)
 my3DArray = [1, 'someString', 3.14, ['I am the secound list', ['I am the third list']]]
 my3DArray[3][1].append('uhuuu again!')
 print(my3DArray[3][1])
-

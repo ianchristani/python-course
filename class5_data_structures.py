@@ -9,7 +9,7 @@ examples (within a variable):
 name = "ian christani"
 bankAccountBalanceInPLN = 1.00
 hasCats = 3
-workInAccenture = True
+work = True
 
 #_______________________________________________________________________________________________________________________
 
@@ -80,10 +80,10 @@ example:
 aboutIan = {"name": "ian christani",
           "bankAccountBalance": 1.00,
           "hasCats": 3,
-          "workInAccenture": true,
+          "work": true,
           "address":{
-              "street": "Rakowicka",
-              "number":83,
+              "street": "Ulica XXX",
+              "number":833,
               "city": "Krakow",
               "updated": true,
             }
